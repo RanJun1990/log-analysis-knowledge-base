@@ -1,0 +1,24 @@
+keep_rules:
+  - "対象時間帯に一致"
+  - "LoginFilterを含む"
+  - "ERROR/WARN/Exception/timeoutを含む"
+  - "処理時間(sec)を含む"
+  - "http-nio-8080-exec- を含む"
+
+exclude_rules:
+  - "対象時間帯外"
+  - "分析目的と無関係な定型起動ログ"
+  - "重複行（同一時刻・同一内容）"
+
+noise_keywords:
+  - "healthcheck"
+  - "heartbeat"
+  - "debug only"
+
+output_fields:
+  - timestamp
+  - level
+  - thread
+  - module
+  - message
+  - duration_sec
