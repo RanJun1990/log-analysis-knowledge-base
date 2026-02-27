@@ -1,0 +1,20 @@
+default_window:
+  pre_minutes: 10
+  post_minutes: 20
+
+incident_windows:
+  - name: "同時ログイン障害"
+    start: "2026-02-19 15:40:00"
+    end: "2026-02-19 16:10:59"
+    purpose: "ログイン停止体感の再現時間帯"
+
+aggregation:
+  time_bucket: "1m"
+  include_metrics:
+    - login_start_count
+    - login_finish_count
+    - error_count
+    - warn_count
+    - timeout_count
+    - slow_count
+    - unique_exec_threads
