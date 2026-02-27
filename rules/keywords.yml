@@ -1,0 +1,32 @@
+error_like:
+  - "<ERROR>"
+  - "Exception"
+  - "失敗"
+  - "異常"
+  - "無効"
+  - "SQLSyntaxErrorException"
+  - "ORA-"
+
+warn_like:
+  - "<WARN>"
+  - "WARN"
+
+timeout_like:
+  - "timeout"
+  - "Timeout"
+  - "タイムアウト"
+  - "応答待ち"
+
+login_like:
+  - "LoginFilter"
+  - "ログイン"
+
+slow_like:
+  - "sec"
+  - "SQLの実行時間"
+
+concurrency_like:
+  - "http-nio-8080-exec-"
+  - "WorkerThreadManager"
+  - "ArrayBlockingQueue"
+  - "connection pool"
